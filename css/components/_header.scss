@@ -8,8 +8,80 @@ header {
 
 $color-logo: #FFC600;
 
+#mobile-nav {
+  height: 100vh;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  position: fixed;
+  background-color: #000000;
+  z-index: 8;
+  overflow: hidden;
+  clip-path: circle(0.4% at 100% 0);
+  transition: clip-path 0.8s ease;
+  .mobile__container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    a {
+      font-size: 5rem;
+      margin: 4rem 0;
+      text-decoration: none;
+      color: #FFC600;
+      padding: 0rem 3rem;
+      transition: all 0.3s ease;
+      border-radius: 1rem;
+    }
+    a::after {
+    content: '';
+    height: 0.5rem;
+    width: 20%;
+    background-color: #FFC600;
+    display: block;
+    transition: all 1s ease;
+    }
+    a:hover::after {
+      width: 100%;
+    }
+    a:hover {
+      background-color: #212121;
+    }
+  }
+  .cross {
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    span {
+      margin: 0.2rem;
+      padding: 0.1rem 2rem;
+      background-color: #ffffff;
+      transform-origin: center;
+    }
+    span:nth-child(1) {
+      transform-origin: center;
+      transform: rotateZ(45deg);
+    }
+    span:nth-child(2) {
+      transform-origin: center;
+      transform: rotateZ(-45deg);
+    }
+  }
+}
+
+#mobile-nav.open {
+  clip-path: circle(200% at 100% 0);;
+}
+
 #nav-section {
   height: 10%;
+  transition: all 0.5s ease;
   a {
     text-decoration: none;
     color: #ffffff;
@@ -59,6 +131,36 @@ $color-logo: #FFC600;
     }
   }
 }
+.humberger {
+  height: 100%;
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-5%);
+  z-index: 4;
+  display: none; // change this value to bring back humberger icon.
+  span {
+    z-index: 15;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    margin: 0.3rem;
+    padding: 0.2rem 2.5rem;
+    background-color: #ffffff;
+    display: block;
+  }
+}
+
+
+#nav-section.sticky {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  z-index: 5;
+  background-color: rgb(97,64,200);
+}
 
 #header-section {
   height: 90%;
@@ -75,6 +177,7 @@ $color-logo: #FFC600;
       color: $color-logo;
       font-family: 'Dancing Script', cursive;
       font-size: 15rem;
+      animation: animate 1s linear;
     }
     p {
       letter-spacing: 0.1rem;
@@ -86,6 +189,19 @@ $color-logo: #FFC600;
       text-align: center;
       color: #ffffff;
       text-shadow: 2px 3px 3px #000000;
+      animation: animate 1s linear;
+      animation-iteration-count: 1;
     }
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(-40%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

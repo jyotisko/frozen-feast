@@ -63,7 +63,11 @@
       z-index: 1;
       img {
         transform: translateY(-10%) rotateZ(30deg);
+        transition: all 0.5s ease;
       }
+    }
+    &:hover .part__2 img {
+      transform: translateY(-10%) rotateZ(30deg) scale(1.1);
     }
   }
 }

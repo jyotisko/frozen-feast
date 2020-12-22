@@ -61,5 +61,11 @@
       padding: 0.3rem 1rem;
       background-color: #FFC600;
     }
+    img {
+      transition: 0.5s ease;
+    }
+    &:hover img {
+      transform: scale(1.1);
+    }
   }
 }
