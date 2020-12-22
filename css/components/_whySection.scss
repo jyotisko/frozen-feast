@@ -1,0 +1,48 @@
+#why {
+  height: 40vh;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  position: relative;
+  &::before {
+    content: 'Why Frozen Feast?';
+    position: absolute;
+    font-size: 4rem;
+    top: 0%;
+    left: 10%;
+    transform: translateY(-100%);
+    color: #FFC600;
+    font-weight: 300;
+  }
+}
+
+.why__container {
+  height: 90%;
+  width: 80%;
+  display: grid;
+  border-radius: 1rem;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 5rem;
+  grid-gap: 3rem;
+  background-color: #FEB302;
+  figure {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    border-radius: 1rem;
+    background-color: #ffffff;
+    text-align: center;
+    img {
+      height: 18rem;
+    }
+    h2 {
+      margin: 2rem 0;
+      font-size: 2rem;
+      font-weight: 500;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+#stick {
+  height: 100vh;
+  margin-top: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  &::before {
+    top: 0%;
+    left: 10%;
+    content: 'Yummy Sticks!';
+    font-size: 4rem;
+    position: absolute;
+    transform: translateY(-100%);
+    color: #FFC600;
+    font-weight: 300;
+  }
+}
+
+.stick__container {
+  width: 80%;
+  height: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #F654AE;
+  border-radius: 1rem;
+  padding: 2rem;
+  grid-gap: 2rem;
+  figure {
+    height: 100%;
+    width: 100%;
+    background-color: #E6489F;
+    border-radius: 1rem;
+    padding-bottom: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h3.name {
+      font-size: 2.5rem;
+      font-weight: 500;
+      color: #ffffff;
+    }
+    h4 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      .cross-price {
+        text-decoration: line-through;
+      }
+      .price-now {
+        color: #ffffff;
+      }
+    }
+    button {
+      border-radius: 0.5rem;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      padding: 0.3rem 1rem;
+      background-color: #FFC600;
+    }
+  }
+}

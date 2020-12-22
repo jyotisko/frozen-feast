@@ -1,0 +1,91 @@
+header {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url('../images/hero.jpg');
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+$color-logo: #FFC600;
+
+#nav-section {
+  height: 10%;
+  a {
+    text-decoration: none;
+    color: #ffffff;
+    text-shadow: 3px 2px 3px #000000;
+    letter-spacing: 0.1rem;
+  }
+  nav {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      width: 30%;
+      justify-content: space-evenly;
+      align-items: center;
+      display: flex;
+      font-size: 4rem;
+      h2 {
+        font-weight: 600;
+        color: $color-logo;
+        text-shadow: 2px 2px 3px #000000;
+      }
+    }
+    .nav__links {
+      height: 100%;
+      width: 45%;
+      justify-content: space-evenly;
+      align-items: center;
+      display: flex;
+      font-size: 3rem;
+      a::after {
+        content: '';
+        height: 0.3rem;
+        display: block;
+        width: 2rem;
+        background-color: #ffffff;
+        transition: all 0.3s ease;
+      }
+      a:hover::after {
+        width: 100%;
+      }
+      img {
+        transform: translateY(-10%);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+#header-section {
+  height: 90%;
+  width: 100%;
+  .header__container {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      text-shadow: 2px 2px 10px #000000;
+      color: $color-logo;
+      font-family: 'Dancing Script', cursive;
+      font-size: 15rem;
+    }
+    p {
+      letter-spacing: 0.1rem;
+      font-size: 3rem;
+      width: 60%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      text-align: center;
+      color: #ffffff;
+      text-shadow: 2px 3px 3px #000000;
+    }
+  }
+}
