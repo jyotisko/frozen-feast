@@ -9,6 +9,7 @@ export const stickyNavAnimation = () => {
   });
 };
 
+// Humberger Toggle
 export const mobileNavToggle = () => {
   const humbergerContainer = document.querySelector('.humberger');
   const mobileNavContainer = document.querySelector('#mobile-nav');

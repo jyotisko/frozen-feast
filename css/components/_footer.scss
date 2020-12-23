@@ -3,7 +3,8 @@ footer {
   height: 30vh;
   width: 100%;
   .footer__container {
-    padding: 2rem;
+    padding-left: 6rem;
+    padding-top: 4rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -47,5 +48,47 @@ footer {
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  footer {
+    height: 20vh;
+    .part__2 {
+      .social__links {
+        div {
+          img {
+            height: 4rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 618px) {
+  footer {
+    height: 15vh;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  footer {
+    .part__2 {
+      .social__links {
+        div {
+          img {
+            height: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-height: 660px) {
+  footer {
+    height: auto;
+    padding-bottom: 2rem;
   }
 }

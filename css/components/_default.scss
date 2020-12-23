@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Herr+Von+Muellerhoff&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *,
 *::after,
@@ -16,4 +17,52 @@ html {
 
 ::selection {
   background-color: #3a86ff;
+}
+
+@media screen and (max-width: 1550px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 1038px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  html {
+    font-size: 35%;
+  }
+}
+
+@media screen and (max-width: 618px) {
+  html {
+    font-size: 30%;
+  }
+}
+
+@media screen and (max-width: 346px) {
+  html {
+    font-size: 25%;
+  }
 }

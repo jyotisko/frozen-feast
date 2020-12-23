@@ -47,3 +47,118 @@
     }
   }
 }
+
+@media screen and (max-width: 1180px) {
+  #why {
+    height: 45vh;
+    width: 100%;
+  }
+  .why__container {
+    height: 80%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .why__container {
+    figure {
+      h2 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 780px) {
+  #why {
+    height: 70vh;
+  }
+  .why__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 370px) {
+  #why {
+    height: 60vh;
+  }
+}
+
+@media (max-height: 950px) {
+  #why {
+   height: 80vh;
+  }
+}
+
+@media (max-height: 700px) {
+  #why {
+   height: 100vh;
+  }
+}
+
+@media (max-height: 628px) {
+  #why {
+   height: 110vh;
+  }
+}
+
+@media (max-height: 560px) {
+  #why {
+   height: 130vh;
+  }
+}
+
+@media (max-height: 500px) {
+  #why {
+   margin-top: 30vh;
+   height: 150vh;
+  }
+}
+
+@media (max-height: 440px) {
+  #why {
+   height: 160vh;
+  }
+}
+
+@media (max-height: 402px) {
+  #why {
+   height: 180vh;
+  }
+}
+
+@media (max-height: 348px) {
+  #why {
+   height: 190vh;
+  }
+}
+
+@media (max-height: 324px) {
+  #why {
+   height: 210vh;
+  }
+}
+
+@media (max-height: 298px) {
+  #why {
+   height: 230vh;
+  }
+}
+
+@media (max-height: 270px) {
+  #why {
+   height: 260vh;
+  }
+}
+
+@media (max-height: 252px) {
+  #why {
+    margin-top: 40vh;
+   height: 280vh;
+  }
+}
+
+@media (max-height: 222px) {
+  #why {
+   height: 300vh;
+  }
+}

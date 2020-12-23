@@ -56,3 +56,20 @@ $color-bg: #FFC600;
     }
   }
 }
+
+@media screen and (max-width: 950px) {
+  #timer {
+    .timer__container {
+      .time {
+        img {
+          height: 50rem;
+          position: absolute;
+          z-index: 1;
+          top: -30%;
+          transform: rotateZ(20deg);
+          right: 0%;
+        }
+      }
+    }
+  }
+}
