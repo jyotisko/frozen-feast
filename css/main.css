@@ -1802,5 +1802,12 @@ footer .footer__container .part__2 .social__links div img {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
+  .cart__container .part__3 h3 {
+    font-size: 4rem;
+  }
+  .cart__container .part__3 button {
+    cursor: pointer;
+    font-size: 5rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
