@@ -8,6 +8,12 @@
   <link rel="stylesheet" href="./css/main.css">
   <script src="./js/controller.js" defer type="module"></script>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    .cart-btn.active {
+      background-color: #f55045;
+      color: #ffffff;
+    }
+  </style>
 </head>
 
 <body>
@@ -19,7 +25,7 @@
         <a href="#">Register</a>
       </div>
       <div class="cross">
-        <img src="./images/close.svg">
+        <img src="./images/close.svg" alt="Close Button">
       </div>
     </section>
 
@@ -32,10 +38,10 @@
           <a href="#">Shop</a>
           <a href="#">Contact</a>
           <a href="#">Register</a>
-          <img height="40px" src="./images/cart.svg" alt="Cart">
+          <img class="cart-icon" height="40px" src="./images/cart.svg" alt="Cart">
         </div>
         <div class="humberger">
-          <img height="40px" src="./images/cart.svg" alt="Cart">
+          <img class="cart-icon" height="40px" src="./images/cart.svg" alt="Cart">
           <div class="hum-icon">
             <span></span>
             <span></span>
@@ -69,57 +75,60 @@
     <section id="special-flavour">
       <h1>Special Flavours</h1>
       <div class="flavour__container">
-        <figure>
+        <figure class="item-container">
           <img src="./images/choco_vanilla.webp" alt="Choco Vanilla">
           <h3 class="name">Choco Vanilla</h3>
           <h4><span class="cross-price">$7.99</span> <span class="now-price">$4.99</span></h4>
-          <button>Add to cart</button>
+          <button class="cart-btn">Add to cart</button>
         </figure>
-        <figure>
+        <figure class="item-container">
           <img src="./images/double-chocolate.webp" alt="Choco Vanilla">
           <h3 class="name">Double Chocolate</h3>
           <h4><span class="cross-price">$7.99</span> <span class="now-price">$4.99</span></h4>
-          <button>Add to cart</button>
+          <button class="cart-btn">Add to cart</button>
         </figure>
-        <figure>
+        <figure class="item-container">
           <img src="./images/butterscotch.webp" alt="Choco Vanilla">
           <h3 class="name">Butterscotch</h3>
           <h4><span class="cross-price">$7.99</span> <span class="now-price">$4.99</span></h4>
-          <button>Add to cart</button>
+          <button class="cart-btn">Add to cart</button>
         </figure>
       </div>
     </section>
 
     <section id="featured">
       <div class="featured__container">
-        <figure>
+        <figure class="item-container">
           <div class="part__1">
             <h2 class="name">Feast Chocolate</h2>
             <p class="desc">Who doesn’t like a Solid surprise! Bite the crunchy chocolate coating into a soft creamy
               chocolate delight and finish with a solid chocolate core. <br>70ml</p>
-            <button>Add to cart</button>
+            <span style="display: none;" class="now-price">$6.99</span>
+            <button class="cart-btn">Add to cart</button>
           </div>
           <div class="part__2">
             <img src="./images/feast-chocolate.webp" alt="Feast">
           </div>
         </figure>
-        <figure>
+        <figure class="item-container">
           <div class="part__1">
             <h2 class="name">Uni Cornetto</h2>
             <p class="desc">Little magic little fantasy! Creamy berry dessert with rich white chocolate disc and magic
               of praline sprinklers in a new purple cone! <br>110ml</p>
-            <button>Add to cart</button>
+            <span style="display: none;" class="now-price">$6.99</span>
+            <button class="cart-btn">Add to cart</button>
           </div>
           <div class="part__2">
             <img src="./images/unicornetto.webp" alt="Cornetto">
           </div>
         </figure>
-        <figure>
+        <figure class="item-container">
           <div class="part__1">
             <h2 class="name">Cornetto Disc Oreo</h2>
             <p class="desc">It's a mix made in heaven! Oreo crushed in creamy Vanilla wrapped in our first-ever
               chocolate cone topped with a chocolate disc <br>110ml</p>
-            <button>Add to cart</button>
+            <span style="display: none;" class="now-price">$6.99</span>
+            <button class="cart-btn">Add to cart</button>
           </div>
           <div class="part__2">
             <img src="./images/corenetto-disc.webp" alt="Disc Cornetto">
@@ -130,53 +139,53 @@
 
     <section id="stick">
       <div class="stick__container">
-        <figure>
+        <figure class="item-container">
           <img src="./images/shahi-kulfi.webp" alt="Shafi Kufi">
           <h3 class="name">Shafi Kufi</h3>
-          <h4><span class="cross-price">$9.99</span> <span class="price-now">$7.49</span></h4>
-          <button>Add to cart</button>
+          <h4><span class="cross-price">$9.99</span> <span class="price-now now-price">$7.49</span></h4>
+          <button class="cart-btn">Add to cart</button>
         </figure>
-        <figure>
+        <figure class="item-container">
           <img src="./images/fruit_n_nut_feast.webp" alt="Fruit N Nuts">
           <h3 class="name">Fruit N Nuts</h3>
-          <h4><span class="cross-price">$11.99</span> <span class="price-now">$4.99</span></h4>
-          <button>Add to cart</button>
+          <h4><span class="cross-price">$11.99</span> <span class="price-now now-price">$4.99</span></h4>
+          <button class="cart-btn">Add to cart</button>
         </figure>
-        <figure>
+        <figure class="item-container">
           <img src="./images/chocobar.webp" alt="Chocobar">
           <h3 class="name">Chocobar</h3>
-          <h4><span class="cross-price">$2.99</span> <span class="price-now">$1.49</span></h4>
-          <button>Add to cart</button>
+          <h4><span class="cross-price">$2.99</span> <span class="price-now now-price">$1.49</span></h4>
+          <button class="cart-btn">Add to cart</button>
         </figure>
-        <figure>
+        <figure class="item-container">
           <img src="./images/cloud-bite.webp" alt="Cloud Bite">
           <h3 class="name">Cloud Bite</h3>
-          <h4><span class="cross-price">$4.99</span> <span class="price-now">$2.99</span></h4>
-          <button>Add to cart</button>
+          <h4><span class="cross-price">$4.99</span> <span class="price-now now-price">$2.99</span></h4>
+          <button class="cart-btn">Add to cart</button>
         </figure>
-        <figure>
+        <figure class="item-container">
           <img src="./images/cola-blast.webp" alt="Cola Blast">
           <h3 class="name">Cola Blast</h3>
-          <h4><span class="cross-price">$6.49</span> <span class="price-now">$4.99</span></h4>
-          <button>Add to cart</button>
+          <h4><span class="cross-price">$6.49</span> <span class="price-now now-price">$4.99</span></h4>
+          <button class="cart-btn">Add to cart</button>
         </figure>
-        <figure>
+        <figure class="item-container">
           <img src="./images/lemon_blast.webp" alt="Lemon Blast">
           <h3 class="name">Lemon Blast</h3>
-          <h4><span class="cross-price">$1.99</span> <span class="price-now">$1.49</span></h4>
-          <button>Add to cart</button>
+          <h4><span class="cross-price">$1.99</span> <span class="price-now now-price">$1.49</span></h4>
+          <button class="cart-btn">Add to cart</button>
         </figure>
-        <figure>
+        <figure class="item-container">
           <img src="./images/orange_mahabar.webp" alt="Orange Masti">
           <h3 class="name">Orange Masti</h3>
-          <h4><span class="cross-price">$3.99</span> <span class="price-now">$1.99</span></h4>
-          <button>Add to cart</button>
+          <h4><span class="cross-price">$3.99</span> <span class="price-now now-price">$1.99</span></h4>
+          <button class="cart-btn">Add to cart</button>
         </figure>
-        <figure>
+        <figure class="item-container">
           <img src="./images/mango_zap.webp" alt="Mango Zap">
           <h3 class="name">Mango Zap</h3>
-          <h4><span class="cross-price">$3.99</span> <span class="price-now">$1.99</span></h4>
-          <button>Add to cart</button>
+          <h4><span class="cross-price">$3.99</span> <span class="price-now now-price">$1.99</span></h4>
+          <button class="cart-btn">Add to cart</button>
         </figure>
       </div>
     </section>
@@ -197,6 +206,34 @@
         </figure>
       </div>
     </section>
+
+    <section id="cart">
+      <div class="cart__container">
+        <div class="part__1">
+          <h2>Shopping Cart</h2>
+          <img class="close-cart" src="./images/close.svg" alt="Close">
+        </div>
+        <div class="part__2 cart-part__2">
+          <!-- <figure class="cart-item">
+            <div class="img">
+              <img src="./images/cloud-bite.webp" alt="Cloud Bite">
+            </div>
+            <div class="info">
+              <h3 class="name">Cloud Bite</h3>
+              <h4 class="price">$1.99</h4>
+            </div>
+            <div class="counters">
+              <button>-</button> <span class="quantity">1</span> <button>+</button>
+            </div>
+          </figure> -->
+        </div>
+        <div class="part__3">
+          <h3>Price: <span class="total-price">$0</span></h3>
+          <button>Buy Now</button>
+        </div>
+      </div>
+    </section>
+
   </main>
   <footer>
     <div class="footer__container">

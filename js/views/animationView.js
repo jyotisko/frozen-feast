@@ -22,4 +22,14 @@ export const mobileNavToggle = () => {
   closeNavBtn.addEventListener('click', () => mobileNavContainer.classList.remove('open'));
 };
 
+// Cart slide animation
+export const cartAnimation = () => {
+  const cartBtn = document.querySelectorAll('.cart-icon');
+  const closeCartBtn = document.querySelector('.close-cart');
+  const cartSection = document.querySelector('#cart');
+
+  cartBtn.forEach(btn => btn.addEventListener('click', () => cartSection.classList.toggle('open')));
+  closeCartBtn.addEventListener('click', () => cartSection.classList.toggle('open'));
+};
+
 
