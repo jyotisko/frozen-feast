@@ -1638,8 +1638,8 @@ footer .footer__container .part__2 .social__links div img {
   display: grid;
   grid-gap: 1rem;
   overflow-y: scroll;
-  -ms-grid-columns: (minmax(20%, auto))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(20%, auto));
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
 }
 
 .cart__container .part__2::-webkit-scrollbar {
@@ -1778,5 +1778,26 @@ footer .footer__container .part__2 .social__links div img {
   z-index: 20;
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+@media screen and (max-width: 1400px) {
+  .cart__container .part__2 {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .cart__container .part__2 {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .cart__container .part__2 {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
 }
 /*# sourceMappingURL=main.css.map */

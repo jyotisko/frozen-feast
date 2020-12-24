@@ -51,7 +51,7 @@
     display: grid;
     grid-gap: 1rem;
     overflow-y: scroll;
-    grid-template-columns: repeat(auto-fill, minmax(20%, auto)); // Change this value for responsiveness
+    grid-template-columns: repeat(4, 1fr); // Change this value for responsiveness
     &::-webkit-scrollbar {
       width: 2px;
     }
@@ -141,5 +141,32 @@
 #cart.open {
   z-index: 20;
   transform: translateY(0);
+}
+
+/////////////////////////// 
+// Media Queries
+
+@media screen and (max-width: 1400px) {
+  .cart__container {
+    .part__2 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .cart__container {
+    .part__2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .cart__container {
+    .part__2 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
 }
 

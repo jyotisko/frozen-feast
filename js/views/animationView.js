@@ -11,7 +11,7 @@ export const stickyNavAnimation = () => {
 
 // Humberger Toggle
 export const mobileNavToggle = () => {
-  const humbergerContainer = document.querySelector('.humberger');
+  const humbergerContainer = document.querySelector('.hum-icon');
   const mobileNavContainer = document.querySelector('#mobile-nav');
   const closeNavBtn = document.querySelector('.cross');
 
