@@ -7,7 +7,6 @@ const contains = (arr, el) => {
   for (let i = 0; i < arr.length; i++) {
     if (arr[i].name == el) {
       arr.splice(i, 1);
-      console.log(items.bookmarks);
       return true;
     };
   } return false;

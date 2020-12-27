@@ -1,10 +1,12 @@
 class CartView {
   _parentContainer = document.querySelector('.cart-part__2');
   _totalPriceEl = document.querySelector('.total-price');
+  _cartQuantityEl = document.querySelectorAll('.cart-quantity')
 
   generateMarkup(items) {
     if (items.length === 0) {
       this._totalPriceEl.textContent = '$0';
+      this._showCartQuantity(items.length);
       return this._parentContainer.innerHTML = '';
     };
 
@@ -30,6 +32,11 @@ class CartView {
 
     this._setTotalPrice();
     this._setupQuantityHandlers();
+    this._showCartQuantity(items.length);
+  }
+
+  _showCartQuantity(total) {
+    this._cartQuantityEl.forEach(el => el.textContent = total)
   }
 
   _setTotalPrice() {
