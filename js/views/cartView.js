@@ -25,6 +25,7 @@ class CartView {
         <div class="counters">
           <button class="decrease-btn">-</button> <span class="quantity">1</span> <button class="increase-btn">+</button>
         </div>
+        <button class="delete-item-btn">Delete</button>
       </figure>
       `;
       this._parentContainer.insertAdjacentHTML('beforeend', markup);
@@ -95,6 +96,16 @@ class CartView {
 
         this._setTotalPrice();
       })
+    });
+  }
+
+  handleDelete(handler) {
+    this._parentContainer.addEventListener('click', e => {
+      if (!e.target.classList.contains('delete-item-btn')) return;
+
+      const figure = e.target.closest('figure');
+      const name = figure.querySelector('.name').textContent;
+      handler(name)
     });
   }
 };

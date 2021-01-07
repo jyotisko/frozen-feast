@@ -33,6 +33,18 @@ class CartBtnView {
       btn.style.color = '#fff';
     })
   }
+
+  removeBtnColor(itemName) {
+    this._figures.forEach(fig => {
+      const name = fig.querySelector('.name').textContent;
+      if (name !== itemName) return;
+      const btn = fig.querySelector('.cart-btn');
+      btn.classList.remove('active');
+      btn.style.backgroundColor = 'rgb(255,198,0)';
+      btn.style.color = '#000';
+    })
+  }
+
 };
 
 export default new CartBtnView();

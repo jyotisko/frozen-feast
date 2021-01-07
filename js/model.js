@@ -28,4 +28,11 @@ export const getDataFromLocalStorage = () => {
   items.bookmarks = itemsFromLocalStorage;
 };
 
-
+export const removeItem = itemName => {
+  items.bookmarks.forEach((item, index) => {
+    if (item.name !== itemName) return;
+    items.bookmarks.splice(index, 1);
+  });
+  localStorage.setItem('items', JSON.stringify(items.bookmarks));
+  getDataFromLocalStorage();
+}

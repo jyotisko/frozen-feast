@@ -1788,6 +1788,25 @@ footer .footer__container .part__2 .social__links div img {
   padding: 0rem 2rem;
 }
 
+.cart__container .part__2 figure.cart-item .delete-item-btn {
+  padding: 0.3rem 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: #F55045;
+  border: 2px solid red;
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 0.5rem;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+.cart__container .part__2 figure.cart-item .delete-item-btn:hover {
+  background-color: red;
+}
+
 .cart__container .part__3 {
   height: 100%;
   width: 100%;

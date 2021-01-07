@@ -110,6 +110,22 @@
           padding: 0rem 2rem;
         }
       }
+      .delete-item-btn {
+        padding: 0.3rem 2rem;
+        font-size: 2rem;
+        cursor: pointer;
+        background-color: #F55045;
+        border: 2px solid red;
+        color: #ffffff;
+        font-weight: 600;
+        letter-spacing: 2px;
+        outline: none;
+        border-radius: 0.5rem;
+        transition: all 0.6s;
+        &:hover {
+          background-color: red;
+        }
+      }
     }
   }
   .part__3 {

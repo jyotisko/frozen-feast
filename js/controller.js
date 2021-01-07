@@ -15,12 +15,19 @@ const getAndSetDataFromLocalStorage = () => {
   cartView.generateMarkup(model.items.bookmarks);
 };
 
+const handleDelete = name => {
+  model.removeItem(name);
+  cartView.generateMarkup(model.items.bookmarks);
+  cartBtnView.removeBtnColor(name);
+};
+
 const init = () => {
   startTimer(OFFER_TIMEOUT_MINUTES);
   cartAnimation();
   stickyNavAnimation();
   mobileNavToggle();
   getAndSetDataFromLocalStorage();
+  cartView.handleDelete(handleDelete);
   cartBtnView.setupEventListeners(manageCartBtns);
   cartBtnView.setBtnColorFromLocalStorage(model.items.bookmarks.length > 0 ? model.items.bookmarks.map(i => i.name) : '');
 };
